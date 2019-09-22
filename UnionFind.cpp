@@ -14,9 +14,6 @@ public:
 
         p.resize(n);
         for (int i = 0; i < n; i++) p[i] = i;
-
-        type.resize(n);
-        for (int i = 0; i < n; i++) type[i] = mat[matPos(i).first][matPos(i).second];
     }
 
     int findSet(int i){return (p[i] == i) ? i : (p[i] = findSet(p[i]));}
@@ -37,8 +34,6 @@ public:
     }
 
     int sizeOfSet(int i){return sz[findSet(i)];}
-
-    int typeOfSet(int i){return type[i];};
 };
 
 int main()
