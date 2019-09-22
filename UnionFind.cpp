@@ -5,7 +5,7 @@ using namespace std;
 class UnionFind
 {
 private:
-    vector<int> p, type, rnk, sz;
+    vector<int> p, rnk, sz;
 
 public:
     UnionFind(int n){
